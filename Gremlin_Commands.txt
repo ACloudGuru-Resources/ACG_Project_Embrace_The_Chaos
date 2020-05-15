@@ -1,0 +1,19 @@
+Configuring Gremlin:
+
+1) Create a free tier Gremlin account here:
+
+https://www.gremlin.com/acloudguru
+
+2) On your EC2 instance, install the following Gremlin dependency:
+
+sudo yum install -y iproute-tc
+
+3)Download the Gremlin repo:
+
+sudo curl https://rpm.gremlin.com/gremlin.repo -o /etc/yum.repos.d/gremlin.repo
+
+4)Install Gremlin:
+
+sudo yum install -y gremlin gremlind
+Start the Gremlin daemon:
+gremlin init
